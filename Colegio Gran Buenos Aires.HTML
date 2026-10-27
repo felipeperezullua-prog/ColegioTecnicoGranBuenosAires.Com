@@ -1,0 +1,337 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Colegio Técnico Gran Buenos Aires</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f2f4f7;
+            color: #222;
+        }
+
+        header {
+            background: linear-gradient(135deg, #123b63, #1d6899);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 21px;
+            font-style: italic;
+        }
+
+        nav {
+            background: #0d2c48;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #72c7ff;
+        }
+
+        .contenedor {
+            max-width: 1000px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        .bienvenida {
+            text-align: center;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            margin-bottom: 40px;
+        }
+
+        .bienvenida h2 {
+            color: #123b63;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+
+        .bienvenida p {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .frase {
+            margin-top: 25px;
+            padding: 20px;
+            background: #e8f4ff;
+            border-left: 5px solid #1d6899;
+            font-size: 22px;
+            font-weight: bold;
+            color: #123b63;
+        }
+
+        .reglas h2 {
+            text-align: center;
+            color: #123b63;
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .regla {
+            background: white;
+            margin-bottom: 20px;
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 6px solid #1d6899;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+        }
+
+        .regla h3 {
+            color: #123b63;
+            margin-bottom: 10px;
+        }
+
+        .regla p {
+            line-height: 1.6;
+        }
+
+        /* BOTÓN */
+
+        .inscripcion {
+            text-align: center;
+            margin: 55px 0 20px;
+        }
+
+        .boton {
+            display: inline-block;
+            padding: 17px 32px;
+            background: #1d6899;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 10px;
+            transition: 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+
+        .boton:hover {
+            background: #0d2c48;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: #0d2c48;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        @media (max-width: 600px) {
+
+            header h1 {
+                font-size: 30px;
+            }
+
+            header p {
+                font-size: 17px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .bienvenida {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+
+    <header>
+        <h1>COLEGIO TÉCNICO GRAN BUENOS AIRES</h1>
+
+        <p>
+            "Lo único que no cambia con el tiempo es la educación."
+        </p>
+    </header>
+
+
+    <!-- MENÚ -->
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#reglas">Reglamento</a>
+    </nav>
+
+
+    <main class="contenedor">
+
+        <!-- BIENVENIDA -->
+
+        <section id="inicio" class="bienvenida">
+
+            <h2>Bienvenidos</h2>
+
+            <p>
+                El Colegio Técnico Gran Buenos Aires tiene como objetivo
+                brindar una educación de calidad, formando estudiantes
+                responsables, respetuosos y preparados para el futuro.
+            </p>
+
+            <div class="frase">
+                "Lo único que no cambia con el tiempo es la educación."
+            </div>
+
+        </section>
+
+
+        <!-- REGLAMENTO -->
+
+        <section id="reglas" class="reglas">
+
+            <h2>Reglamento del Colegio</h2>
+
+
+            <div class="regla">
+
+                <h3>1. Tolerancia cero a la violencia</h3>
+
+                <p>
+                    No se permite ningún tipo de violencia dentro de la
+                    institución. El colegio no tolerará agresiones físicas,
+                    verbales, amenazas, acoso ni cualquier otra conducta
+                    violenta hacia estudiantes, docentes o personal.
+                </p>
+
+            </div>
+
+
+            <div class="regla">
+
+                <h3>2. Presentación personal</h3>
+
+                <p>
+                    No se permite el uso de capuchas, prendas o accesorios
+                    que cubran el rostro durante las actividades escolares.
+                    Los estudiantes deberán mantener una presentación
+                    adecuada dentro de la institución.
+                </p>
+
+            </div>
+
+
+            <div class="regla">
+
+                <h3>3. Respeto</h3>
+
+                <p>
+                    Todos los integrantes de la comunidad educativa deberán
+                    tratarse con respeto. No se permitirán insultos,
+                    discriminación, burlas o conductas que perjudiquen la
+                    convivencia escolar.
+                </p>
+
+            </div>
+
+
+            <div class="regla">
+
+                <h3>4. Cuidado de las instalaciones</h3>
+
+                <p>
+                    Los estudiantes deberán cuidar las aulas, talleres,
+                    materiales, mobiliario y demás instalaciones del colegio.
+                    Cualquier daño intencional será considerado una falta.
+                </p>
+
+            </div>
+
+
+            <div class="regla">
+
+                <h3>5. Convivencia escolar</h3>
+
+                <p>
+                    El colegio promueve un ambiente seguro, inclusivo y
+                    respetuoso. Todos los estudiantes tienen derecho a
+                    aprender en un espacio donde puedan desarrollarse y
+                    sentirse seguros.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- BOTÓN DE INFORMACIÓN -->
+
+        <section class="inscripcion">
+
+            <a
+                class="boton"
+                href="https://www.wattpad.com/1667142703-colegio-tecnico-de-la-gran-buenos-aires-colegio"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                APRETALO PARA MÁS INFO
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+
+    <footer>
+
+        <p>
+            <strong>Colegio Técnico Gran Buenos Aires</strong>
+        </p>
+
+        <p>
+            Educación • Respeto • Futuro
+        </p>
+
+        <p>
+            © 2026 Colegio Técnico Gran Buenos Aires
+        </p>
+
+    </footer>
+
+</body>
+</html>
+```
